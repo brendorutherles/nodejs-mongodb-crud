@@ -12,7 +12,7 @@ var Db = require('mongodb').Db,
 
 EmployeeProvider = function() {
   var that = this;
-  mongodbUri = process.env.MONGOLAB_URI || 'mongodb://mongodb';
+  mongodbUri =  'mongodb+srv://brendo:brendo1996@cluster0.hb9h9.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
   MongoClient.connect(mongodbUri, function(err, db){
     if(err) { return console.dir(err); }
     that.db = db;
